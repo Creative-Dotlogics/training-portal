@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Profile
+    link(rel='stylesheet', href='/css/dashboard.css')
+    link(rel='stylesheet', href='/css/icons.min.css')
+  body
+    .navigation
+        .profile
+          .image
+            img(src="/images/user.jpg" alt="profile Picture")
+          .user
+            h3 Peter Claver
+            p rockpeter734@gmail.com
+            .button
+              a.btn.btn-primary(href='')
+                ion.ion-md-create
+                |  Edit Details
+        .links
+          .link.active
+            a(href='#')
+              ion.ion-md-apps
+              |   Dashboard
+          .link
+            a(href='#')
+              ion.ion-md-american-football
+              |  Training
+          .link
+            a(href='#')
+              ion.ion-md-wifi
+              |  Live Session
+          .link
+            a(href='#')
+              ion.ion-md-mail
+              |  Messages
+          .dropdown
+            .link
+              a(href='#')
+                ion.ion-md-book
+                |  Quiz
+            .links
+              .link
+                a(href='#') Objective Test
+              .link
+                a(href='#') Theory
+          .link
+            a(href='#')
+              ion.ion-md-cog
+              |  Settings
+          .link
+            a(href='#')
+              ion.ion-md-log-out
+              |  Logout
+              
+    script(src='/js/dashboard.js', charset='utf-8')
+    block content

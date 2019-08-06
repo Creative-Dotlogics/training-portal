@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'maven';
+  src:url('/fonts/MavenPro-Regular.ttf');
+}
+
+*{font-family: maven; margin: 0; padding: 0;}
+
+body{
+  background: #f2f2f2;
+}
+
+.navigation{
+  height: 100vh;
+  width: 18vw;
+  background: #fff;
+}
+
+.navigation .profile{
+  height: 30vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation .profile .user .button{
+  margin-top: 20px;
+}
+.navigation .profile .user .btn{
+  text-decoration: none;
+  background: #0080FF;
+  padding: 10px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+}
+.navigation .profile .user{
+  margin-top: 10px;
+  text-align: center;
+}
+.navigation .profile img{
+  height: 90px;
+  border-radius: 50%;
+}
+
+.navigation .links .link.active a{color: #fff;}
+.navigation .links .link.active{
+    background: #00d680;
+}
+.navigation .links .link{
+  cursor: pointer;
+}
+
+.navigation .links .link a{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 15px 15px;
+}
+
+.navigation .links .link:hover,
+.dropdown .links .link:hover{
+  background: #ccc;
+}
+.dropdown {
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
+.dropdown .links{
+  position: absolute;
+  transition: all 0.5s;
+  margin-left: calc(18vw + 30px);
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  width: 200px;
+  background: #fff;
+  transform: rotate(15deg);
+}
+
+.dropdown.show .links{
+  margin-left: 18vw;
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(0deg);
+}
